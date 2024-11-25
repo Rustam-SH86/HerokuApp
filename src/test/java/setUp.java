@@ -10,25 +10,27 @@ import org.testng.annotations.Optional;
 import java.time.Duration;
 
 public class setUp {
-        WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+    WebDriver driver;
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
     @BeforeTest
-    public void setup(@Optional("safari") String browser) {
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+    public void setup(@Optional("chrome") String browser) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
-            options.addArguments("--headless");
+            // options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
             driver = new SafariDriver();
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-        @AfterTest(alwaysRun = true)
-        public void quitDriver() {
-            driver.quit();
-        }
+
+    @AfterTest(alwaysRun = true)
+    public void quitDriver() {
+        driver.quit();
+    }
 }
 
