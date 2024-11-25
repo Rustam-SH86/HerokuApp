@@ -10,8 +10,8 @@ public class IFrameCheckTest extends setUp {
         driver.get("https://the-internet.herokuapp.com/iframe");
         driver.findElement(By.xpath("(//*[name()='path'])[18]")).click();
         driver.switchTo().frame("mce_0_ifr");
-        WebElement paragraph = driver.findElement(By.cssSelector("body#tinymce > p"));
-        String paragraphText = paragraph.getText().trim();
+        WebElement paragraf = driver.findElement(By.cssSelector("body#tinymce > p"));
+        String paragraphText = paragraf.getText().trim();
         Assert.assertEquals(paragraphText, "Your content goes here.", "Text does not match!");
     }
 }

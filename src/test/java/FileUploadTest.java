@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,8 @@ public class FileUploadTest extends setUp {
         File file = new File("src/test/resources/Screenshot 2024-11-18 at 21.34.13.png");
         driver.findElement(By.xpath("//input[@type='file']")).sendKeys(file.getAbsolutePath());
         driver.findElement(By.id("file-submit")).click();
-        driver.findElement(By.id("uploaded-files")).click();
+        WebElement uploadFile = driver.findElement(By.id("uploaded-files"));
+        uploadFile.click();
         String title = driver.findElement(By.xpath("//*[@id='content']/div/h3")).getText();
         Assert.assertEquals(title, "File Uploaded!");
     }
