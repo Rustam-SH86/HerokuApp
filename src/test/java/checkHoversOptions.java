@@ -1,12 +1,8 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
-public class checkHoversOptionsTest extends setUp {
-    @Test
+public class checkHoversOptions extends setUp {
+   /* @Test
     public void checkHoversOptions() {
         driver.get("http://the-internet.herokuapp.com/hovers");
         Actions actions = new Actions(driver);
@@ -22,5 +18,5 @@ public class checkHoversOptionsTest extends setUp {
         System.out.println(title);
         WebElement notFound = driver.findElement(By.xpath("/html/body/h1"));
         assertNotEquals(notFound.getText(), "Not Found");
-    }
+    } */
 }

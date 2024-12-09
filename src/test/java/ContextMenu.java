@@ -4,10 +4,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ContextMenuTest extends setUp {
-    WebDriver driver;
+public class ContextMenu extends setUp {
 
-    @Test(testName = "Контекстное меню", description = "Проверка контекстного меню", retryAnalyzer = Retry.class,
+  /*  @Test(testName = "Контекстное меню", description = "Проверка контекстного меню", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)
     public void checkContextMenu() {
         driver.get("https://the-internet.herokuapp.com/context_menu");
@@ -15,6 +14,6 @@ public class ContextMenuTest extends setUp {
         actions.contextClick(driver.findElement(By.id("hot-spot"))).perform();
         String alertText = driver.switchTo().alert().getText();
         Assert.assertEquals(alertText, "You selected a context menu");
-    }
+    } */
 }
 

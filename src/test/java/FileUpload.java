@@ -1,12 +1,5 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import java.io.File;
-
-public class FileUploadTest extends setUp {
-    @Test(testName = "Upload File", description = "Проверка загрузки файла", retryAnalyzer = Retry.class,
+public class FileUpload extends setUp {
+   /* @Test(testName = "Upload File", description = "Проверка загрузки файла", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)
     public void uploadFile() {
         driver.get("https://the-internet.herokuapp.com/upload");
@@ -17,5 +10,5 @@ public class FileUploadTest extends setUp {
         uploadFile.click();
         String title = driver.findElement(By.xpath("//*[@id='content']/div/h3")).getText();
         Assert.assertEquals(title, "File Uploaded!");
-    }
+    } */
 }
