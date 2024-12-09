@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -16,16 +17,8 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class addRemoveElementTest {
+public class addRemoveElementTest extends setUp{
     WebDriver driver;
-
-    @BeforeTest
-    public void setup() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
 
     @Test
     public void checkAddRemoveElement() {
@@ -119,10 +112,5 @@ public class addRemoveElementTest {
         System.out.println(title);
         WebElement notFound = driver.findElement(By.xpath("/html/body/h1"));
         assertNotEquals(notFound.getText(), "Not Found");
-    }
-
-    @AfterTest(alwaysRun = true)
-    public void quitDriver() {
-        driver.quit();
     }
 }

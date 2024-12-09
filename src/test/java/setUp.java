@@ -4,6 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 
@@ -13,7 +14,7 @@ public class setUp {
     WebDriver driver;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    @BeforeTest
+    @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         if (browser.equalsIgnoreCase("chrome")) {
