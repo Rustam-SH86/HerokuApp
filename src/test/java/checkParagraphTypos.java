@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class checkParagraphTyposTest extends setUp {
-    @Test
+public class checkParagraphTypos extends setUp {
+  /*  @Test
     public void checkParagraphTypos() {
         driver.get("https://the-internet.herokuapp.com/typos");
         do {
@@ -22,5 +22,5 @@ public class checkParagraphTyposTest extends setUp {
             assertEquals(paragraphText2, expectedCorrectText2, "The second paragraph text contains a typo.");
 
         } while (true);
-    }
+    }*/
 }

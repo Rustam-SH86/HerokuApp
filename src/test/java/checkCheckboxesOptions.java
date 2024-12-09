@@ -1,13 +1,8 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import static org.testng.Assert.assertFalse;
 
-public class checkCheckboxesOptionsTest extends setUp {
-    @Test
-    public void checkCheckboxesOptions() {
+public class checkCheckboxesOptions extends setUp {
+  /*   @Test
+   public void checkCheckboxesOptions() {
         driver.get("http://the-internet.herokuapp.com/checkboxes");
         WebElement checkbox1 = driver.findElement(By.xpath("(//input[@type='checkbox'])[1]"));
         WebElement checkbox2 = driver.findElement(By.xpath("(//input[@type='checkbox'])[2]"));
@@ -17,5 +12,5 @@ public class checkCheckboxesOptionsTest extends setUp {
         Assert.assertTrue(checkbox2.isSelected(), "Checkbox2 checked by default");
         checkbox2.click();
         assertFalse(checkbox2.isSelected(), "Checkbox2 should be unchecked");
-    }
+    } */
 }

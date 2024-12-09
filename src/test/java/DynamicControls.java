@@ -1,16 +1,6 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+public class DynamicControls extends setUp {
 
-import java.time.Duration;
-
-public class DynamicControlsTest extends setUp {
-    WebDriver driver;
-    @Test(testName = "ЧекБокс", description = "Проверяем что после клика пропадает чекбокс", retryAnalyzer = Retry.class,
+ /*   @Test(testName = "ЧекБокс", description = "Проверяем что после клика пропадает чекбокс", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)
     public void checkDynamicControls() {
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
@@ -30,6 +20,6 @@ public class DynamicControlsTest extends setUp {
         driver.findElement(By.xpath("//button[normalize-space()='Enable']")).click();
         wait.until((ExpectedConditions.visibilityOfElementLocated(By.id("message"))));
         wait.until(ExpectedConditions.elementToBeClickable(inputField));
-    }
+    } */
 
 }

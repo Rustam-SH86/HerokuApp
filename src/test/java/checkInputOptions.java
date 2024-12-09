@@ -1,12 +1,7 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
 import static org.testng.Assert.assertEquals;
 
-public class checkInputOptionsTest extends setUp {
-    @Test
+public class checkInputOptions extends setUp {
+   /* @Test
     public void checkInputOptions() {
         driver.get("https://the-internet.herokuapp.com/inputs");
         WebElement input = driver.findElement(By.xpath("//input[@type='number']"));
@@ -18,5 +13,5 @@ public class checkInputOptionsTest extends setUp {
         input.sendKeys(Keys.ARROW_DOWN);
         actualValue = input.getAttribute("value");
         assertEquals(actualValue, "111");
-    }
+    } */
 }

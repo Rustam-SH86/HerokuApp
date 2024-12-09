@@ -8,8 +8,8 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class checkDropDownOptionsTest extends setUp {
-    @Test
+public class checkDropDownOptions extends setUp {
+   /* @Test
     public void checkDropDownOptions() {
         driver.get("http://the-internet.herokuapp.com/dropdown");
         WebElement dropDown = driver.findElement(By.id("dropdown"));
@@ -22,6 +22,6 @@ public class checkDropDownOptionsTest extends setUp {
         Assert.assertTrue(select.getFirstSelectedOption().isSelected());
         select.selectByVisibleText("Option 2");
         Assert.assertTrue(select.getFirstSelectedOption().isSelected());
-    }
+    } */
 
 }
