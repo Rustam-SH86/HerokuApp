@@ -20,7 +20,7 @@ public class setUp {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
-            // options.addArguments("--headless");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
             driver = new SafariDriver();
