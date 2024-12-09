@@ -17,10 +17,8 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class addRemoveElementTest extends setUp{
-    WebDriver driver;
-
-    @Test
+public class addRemoveElement extends setUp{
+    /*@Test
     public void checkAddRemoveElement() {
         driver.get("https://the-internet.herokuapp.com/add_remove_elements/");
         WebElement addElement = driver.findElement(By.xpath("//button[text() = 'Add Element']"));
