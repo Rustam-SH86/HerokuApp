@@ -10,7 +10,7 @@
     <test name="Thread#2">
         <classes>
             <class name="HerokuAppTests.checkAddRemoveElementTest"/>
-            <parameter name="browser" value="safari"></parameter>
+            <parameter name="browser" value="chrome"></parameter>
 
         </classes>
     </test> <!-- Test -->
