@@ -1,3 +1,6 @@
+package HerokuAppTests;
+
+import base.SetUp;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -5,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
-public class checkAddRemoveElementTest extends setUp {
+public class checkAddRemoveElementTest extends SetUp {
     @Test
     public void checkAddRemoveElement() {
         driver.get("https://the-internet.herokuapp.com/add_remove_elements/");

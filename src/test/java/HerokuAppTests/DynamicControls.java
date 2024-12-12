@@ -1,4 +1,8 @@
-public class DynamicControls extends setUp {
+package HerokuAppTests;
+
+import base.SetUp;
+
+public class DynamicControls extends SetUp {
 
  /*   @Test(testName = "ЧекБокс", description = "Проверяем что после клика пропадает чекбокс", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)

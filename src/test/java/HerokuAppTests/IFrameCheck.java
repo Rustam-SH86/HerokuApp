@@ -1,4 +1,8 @@
-public class IFrameCheck extends setUp {
+package HerokuAppTests;
+
+import base.SetUp;
+
+public class IFrameCheck extends SetUp {
    /* @Test(testName = "Проверка IFrame", description = "Проверка IFrame поля", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)
     public void IFrameCheck() {

@@ -1,14 +1,10 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package HerokuAppTests;
 
-import java.util.List;
+import base.SetUp;
 
 import static org.testng.Assert.assertEquals;
 
-public class checkDropDownOptions extends setUp {
+public class checkDropDownOptions extends SetUp {
    /* @Test
     public void checkDropDownOptions() {
         driver.get("http://the-internet.herokuapp.com/dropdown");

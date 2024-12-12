@@ -1,23 +1,8 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import java.time.Duration;
-import java.util.List;
+package HerokuAppTests;
 
-import static org.testng.Assert.*;
+import base.SetUp;
 
-public class addRemoveElement extends setUp{
+public class addRemoveElement extends SetUp {
     /*@Test
     public void checkAddRemoveElement() {
         driver.get("https://the-internet.herokuapp.com/add_remove_elements/");

@@ -1,10 +1,8 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package HerokuAppTests;
 
-public class ContextMenu extends setUp {
+import base.SetUp;
+
+public class ContextMenu extends SetUp {
 
   /*  @Test(testName = "Контекстное меню", description = "Проверка контекстного меню", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)

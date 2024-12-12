@@ -1,10 +1,10 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
+package HerokuAppTests;
+
+import base.SetUp;
 
 import static org.testng.Assert.assertEquals;
 
-public class checkParagraphTypos extends setUp {
+public class checkParagraphTypos extends SetUp {
   /*  @Test
     public void checkParagraphTypos() {
         driver.get("https://the-internet.herokuapp.com/typos");

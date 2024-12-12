@@ -1,7 +1,11 @@
+package HerokuAppTests;
+
+import base.SetUp;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
-public class checkHoversOptions extends setUp {
+public class checkHoversOptions extends SetUp {
    /* @Test
     public void checkHoversOptions() {
         driver.get("http://the-internet.herokuapp.com/hovers");

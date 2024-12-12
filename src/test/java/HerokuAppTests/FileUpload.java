@@ -1,4 +1,8 @@
-public class FileUpload extends setUp {
+package HerokuAppTests;
+
+import base.SetUp;
+
+public class FileUpload extends SetUp {
    /* @Test(testName = "Upload File", description = "Проверка загрузки файла", retryAnalyzer = Retry.class,
             groups = {"smoke"}, priority = 2, enabled = true)
     public void uploadFile() {

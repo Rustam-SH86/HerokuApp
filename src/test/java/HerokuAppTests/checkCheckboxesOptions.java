@@ -1,6 +1,10 @@
+package HerokuAppTests;
+
+import base.SetUp;
+
 import static org.testng.Assert.assertFalse;
 
-public class checkCheckboxesOptions extends setUp {
+public class checkCheckboxesOptions extends SetUp {
   /*   @Test
    public void checkCheckboxesOptions() {
         driver.get("http://the-internet.herokuapp.com/checkboxes");

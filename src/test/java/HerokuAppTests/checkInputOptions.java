@@ -1,6 +1,10 @@
+package HerokuAppTests;
+
+import base.SetUp;
+
 import static org.testng.Assert.assertEquals;
 
-public class checkInputOptions extends setUp {
+public class checkInputOptions extends SetUp {
    /* @Test
     public void checkInputOptions() {
         driver.get("https://the-internet.herokuapp.com/inputs");
