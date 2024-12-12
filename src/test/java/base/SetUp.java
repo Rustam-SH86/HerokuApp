@@ -19,6 +19,7 @@ import java.time.Duration;
 
 public class SetUp {
     protected WebDriver driver;
+
     @BeforeMethod
     public void setup(@Optional("chrome") String browser) {
         System.out.println("Initializing driver...");
@@ -27,20 +28,22 @@ public class SetUp {
             options.setPageLoadStrategy(PageLoadStrategy.EAGER);
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
-            //options.addArguments("--headless");
+            options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
             driver = new SafariDriver();
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-@AfterMethod
+
+    @AfterMethod
     @Step("Закрытие браузера")
     public void quitDriver(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
             AllureUtils.takeScreenshot(driver);
         }
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
-

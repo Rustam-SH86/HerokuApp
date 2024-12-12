@@ -22,5 +22,6 @@ public class checkAddRemoveElementTest extends SetUp {
         List<WebElement> buttonDeleteAfterDelete = driver.findElements(By.xpath("//button[text() = 'Delete']"));
         softAssert.assertEquals(buttonDeleteAfterDelete.size(), 1);
         softAssert.assertAll();
+
     }
 }
