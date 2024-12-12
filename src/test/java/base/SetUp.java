@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -21,17 +23,18 @@ public class SetUp {
     protected WebDriver driver;
 
     @BeforeMethod
-    public void setup(@Optional("chrome") String browser) {
-        System.out.println("Initializing driver...");
+    public void setup(@Optional("chrome") String browser, ITestContext context) {
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+            options.addArguments("--disable-notifications");
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
             options.addArguments("--headless");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
-            driver = new SafariDriver();
+            SafariOptions options = new SafariOptions();
+            driver = new SafariDriver(options);
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
@@ -45,5 +48,4 @@ public class SetUp {
         if (driver != null) {
             driver.quit();
         }
-    }
-}
+    }   }
