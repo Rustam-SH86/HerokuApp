@@ -13,13 +13,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import utils.AllureUtils;
+import utils.PropertyReader;
 
 import java.time.Duration;
 
 public class SetUp {
     protected WebDriver driver;
-    protected String user = System.getProperty("user");
-    protected String password = System.getProperty("password");
+    protected String user = System.getProperty("user", PropertyReader.getProperty("user"));
+    protected String password = System.getProperty("password",PropertyReader.getProperty("password"));
 
     @BeforeMethod
     public void setup(@Optional("chrome") String browser, ITestContext context) {
