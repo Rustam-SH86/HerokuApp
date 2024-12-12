@@ -18,6 +18,8 @@ import java.time.Duration;
 
 public class SetUp {
     protected WebDriver driver;
+    protected String user = System.getProperty("user");
+    protected String password = System.getProperty("password");
 
     @BeforeMethod
     public void setup(@Optional("chrome") String browser, ITestContext context) {

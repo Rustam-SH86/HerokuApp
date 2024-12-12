@@ -9,6 +9,6 @@ public class SauceDemoTest extends SetUp {
     public void loginToSauceDemo() {
         SauceDemoPage sauceDemoPage = new SauceDemoPage(driver);
         sauceDemoPage.open();
-        sauceDemoPage.authorization("standard_user", "secret_sauce");
+        sauceDemoPage.authorization(user,password);
     }
 }
