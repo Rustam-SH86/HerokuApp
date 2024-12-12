@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,9 +15,11 @@ public class SauceDemoPage extends BasePage {
         super(driver);
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+    @Step("Открыть страницу SauceDemo")
     public void open() {
         driver.get("https://www.saucedemo.com");
     }
+    @Step("авторизация")
     public void authorization(String username, String password) {
         driver.findElement(USERNAME_INPUT).sendKeys(username);
         driver.findElement(PASSWORD_INPUT).sendKeys(password);

@@ -31,6 +31,12 @@ public class SetUp {
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
             options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--remote-allow-origins=*");
+
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
             SafariOptions options = new SafariOptions();
