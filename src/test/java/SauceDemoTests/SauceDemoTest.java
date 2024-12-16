@@ -10,6 +10,7 @@ import pages.SauceDemoPage;
 
 @Log4j2
 public class SauceDemoTest extends SetUp {
+
     @Step("авторизация на сайте")
     @Description("Авторизация на SauceDemo с проверкой успешного входа")
     @Test

@@ -37,6 +37,7 @@ public class SetUp {
             options.addArguments("--disable-extensions");
             options.addArguments("--remote-allow-origins=*");
 
+
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("safari")) {
             SafariOptions options = new SafariOptions();

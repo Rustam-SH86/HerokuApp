@@ -15,6 +15,7 @@ public class SauceDemoPage extends BasePage {
         super(driver);
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+
     @Step("Открыть страницу SauceDemo")
     public void open() {
         driver.get("https://www.saucedemo.com");
