@@ -13,6 +13,7 @@ import java.util.List;
 
 @Log4j2
 public class СheckAddRemoveElementTest extends SetUp {
+
     @Step("Проверяем удаление и добавление элемента")
     @Description("удаление и добавление элемента")
     @Test
