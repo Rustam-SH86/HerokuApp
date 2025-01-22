@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"удаление и добавление элемента","575","checkAddRemoveElement","Sauce demo SmokeTest","Wed Jan 22 13:53:34 GMT 2025","passed","Wed Jan 22 13:53:35 GMT 2025","HerokuAppTests.СheckAddRemoveElementTest","Thread#2","HerokuAppTests.СheckAddRemoveElementTest","checkAddRemoveElement"
+"Авторизация на SauceDemo с проверкой успешного входа","758","loginToSauceDemo","Sauce demo SmokeTest","Wed Jan 22 13:53:34 GMT 2025","passed","Wed Jan 22 13:53:35 GMT 2025","SauceDemoTests.SauceDemoTest","Thread#1","SauceDemoTests.SauceDemoTest","loginToSauceDemo"
